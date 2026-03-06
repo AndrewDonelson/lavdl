@@ -1,0 +1,39 @@
+[Unit]
+Description=LADL — Local Age Determination Ledger daemon
+Documentation=https://github.com/AndrewDonelson/ladl
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ladl
+Group=ladl
+ExecStart=/usr/local/bin/ladl daemon --config /etc/ladl/config.yaml
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Restart policy: always restart on unexpected exit.
+Restart=on-failure
+RestartSec=5s
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/ladl /run/ladl
+
+# Runtime directories (created automatically by systemd)
+RuntimeDirectory=ladl
+RuntimeDirectoryMode=0750
+StateDirectory=ladl
+StateDirectoryMode=0750
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=512
+
+[Install]
+WantedBy=multi-user.target

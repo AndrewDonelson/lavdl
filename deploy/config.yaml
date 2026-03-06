@@ -1,0 +1,64 @@
+# LADL Reference Configuration
+# Copy to /etc/ladl/config.yaml and customise before starting the service.
+#
+# Run: ladl daemon --config /etc/ladl/config.yaml
+
+# ---------------------------------------------------------------------------
+# Service settings
+# ---------------------------------------------------------------------------
+service:
+  # TCP port the HTTP API listens on.
+  port: 7743
+
+  # Unix domain socket path for local-only requests.
+  # Requests via this socket bypass the localhost-only filter.
+  socket: /run/ladl/ladl.sock
+
+  # Directory where the user identity keypair is stored.
+  # Must be owned by the ladl service user with mode 0700.
+  identity_dir: /var/lib/ladl/identity
+
+# ---------------------------------------------------------------------------
+# Verification settings
+# ---------------------------------------------------------------------------
+verification:
+  # Default verification level when none is specified by the client.
+  default_level: 1
+
+  # Maximum level accepted by the API (1=self-attest, 2=OCR doc, 3=VC).
+  max_level: 3
+
+# ---------------------------------------------------------------------------
+# OCR settings (required for level-2 document verification)
+# ---------------------------------------------------------------------------
+ocr:
+  # Absolute path to the tesseract binary.
+  tesseract_path: /usr/bin/tesseract
+
+  # Language data packs to load (comma-separated).
+  languages: eng
+
+# ---------------------------------------------------------------------------
+# Strata / L4 settings
+# ---------------------------------------------------------------------------
+strata:
+  # Whether to enable L4 ledger connectivity.
+  enabled: true
+
+  l4:
+    # Node operating mode: "peer" or "ledger".
+    #   peer   — participates in record propagation but does not serve /q/.
+    #   ledger — full ledger node; serves /q/, /peers, /sync.
+    mode: peer
+
+    # Number of peer confirmations required before a record is considered final.
+    quorum: 3
+
+    # Maximum number of peer connections to maintain simultaneously.
+    max_peers: 50
+
+    # Bootstrap peer addresses. Format: host:port
+    # peers:
+    #   - ladl-node-1.example.com:7743
+    #   - ladl-node-2.example.com:7743
+    peers: []
