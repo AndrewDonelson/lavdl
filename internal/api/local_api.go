@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// local_api.go — local peer-mode HTTP API restricted to 127.0.0.1: /uuid, /status, /verify, /revoke
+
 // Package api implements the LADL local (peer mode) HTTP API.
 //
 // All endpoints are restricted to 127.0.0.1 or the Unix domain socket.

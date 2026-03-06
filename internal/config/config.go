@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// config.go — LADL configuration loading and defaults from YAML or environment
+
 // Package config provides configuration loading for ladl.
 package config
 

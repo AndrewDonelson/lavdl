@@ -1,5 +1,8 @@
-// level3.go — Verifiable Credential (W3C VC) verification — Level 3.
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
 //
+// level3.go — Level 3 W3C Verifiable Credential verification — issuer Ed25519 signature
+
 // This is a placeholder implementation. It parses a W3C VC JSON-LD document,
 // verifies the issuer's Ed25519 signature using the public DID in the issuer field,
 // extracts the age claim, and records l:3 in the payload.

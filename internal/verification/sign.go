@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// sign.go — payload signing helpers — builds and signs the canonical LADL record
+
 package verification
 
 import (

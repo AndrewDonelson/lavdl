@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// revoke.go — `ladl revoke` command — revokes the local identity on the ledger
+
 package cmd
 
 import (

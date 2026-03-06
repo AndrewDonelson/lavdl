@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// level1.go — Level 1 self-attestation — user signs their own age-group claim
+
 // Package verification implements the three LADL verification levels.
 //
 // Level 1: Self-attestation — the user signs their own age group claim.

@@ -1,4 +1,8 @@
-// version.go — `ladl version` command.
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// version.go — `ladl version` command — prints the build version and commit hash
+
 package cmd
 
 import (

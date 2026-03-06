@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// status.go — `ladl status` command — queries the ledger for a UUID's verification status
+
 package cmd
 
 import (

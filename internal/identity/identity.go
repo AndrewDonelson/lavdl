@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// identity.go — Ed25519 keypair generation, UUID derivation, load/save, and system binding
+
 // Package identity manages Ed25519 keypairs and UUID derivation for LADL.
 //
 // Each user has exactly one keypair. The UUID is derived deterministically

@@ -1,4 +1,8 @@
-// level2.go — Document-Assisted OCR verification (Level 2).
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// level2.go — Level 2 document-assisted OCR verification — DOB extracted via Tesseract
+
 package verification
 
 import (

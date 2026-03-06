@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// errors.go — sentinel error values shared across all LADL packages
+
 // Package errors defines the sentinel errors for the ladl service.
 package errors
 

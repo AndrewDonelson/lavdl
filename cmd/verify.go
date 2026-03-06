@@ -1,4 +1,8 @@
-// verify.go — `ladl verify` command.
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// verify.go — `ladl verify` command — performs an age-verification request (levels 1-3)
+
 package cmd
 
 import (

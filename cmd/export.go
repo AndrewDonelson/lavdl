@@ -1,4 +1,8 @@
-// export.go — `ladl export-identity` command.
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// export.go — `ladl export-identity` command — encrypts and exports the local keypair
+
 package cmd
 
 import (

@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// export.go — AES-256-GCM encrypted keypair backup (Export) and restore (Import)
+
 // Package identity — export.go implements AES-256-GCM encrypted keypair backup/restore.
 package identity
 

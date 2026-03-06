@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// ledger.go — Strata L4 wrapper providing LADL-specific Publish, Query, and Revoke APIs
+
 // Package ledger wraps Strata L4 to provide LADL-specific publish/query/revoke APIs.
 package ledger
 

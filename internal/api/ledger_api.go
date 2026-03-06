@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// ledger_api.go — public LADL ledger HTTP API (--ledger mode): GET /q/{uuid}, GET /peers, POST /sync
+
 // Package api — ledger_api.go implements the public LADL ledger HTTP API.
 //
 // This API is only available in --ledger mode.

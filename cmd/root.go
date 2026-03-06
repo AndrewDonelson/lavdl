@@ -1,3 +1,8 @@
+// Copyright (c) 2026 Nlaak Studios (https://nlaak.com)
+// Author: Andrew Donelson (https://www.linkedin.com/in/andrew-donelson/)
+//
+// root.go — root Cobra command and global flag definitions
+
 // Package cmd provides the LADL CLI commands.
 package cmd
 
